@@ -9,9 +9,6 @@ warnings.filterwarnings('ignore')
 train=pd.read_csv('https://raw.githubusercontent.com/limchiahooi/loan-approval-prediction/master/train_u6lujuX_CVtuZ9i.csv')
 test = pd.read_csv('https://datahack-prod.s3.amazonaws.com/test_file/test_lAUu6dG.csv')
 
-
-
-
 def preprocessing(train, test):
 
     train['Dependents'].replace('3+', 3, inplace=True)
@@ -20,7 +17,7 @@ def preprocessing(train, test):
     # replacing Y and N in Loan_Status variable with 1 and 0 respectively
     train['Loan_Status'].replace('N', 0, inplace=True)
     train['Loan_Status'].replace('Y', 1, inplace=True)
-    
+
     # replace missing values with the mode
 
     

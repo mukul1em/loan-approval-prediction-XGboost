@@ -61,8 +61,6 @@ def randomForest(X, xtest,y):
     print("\nMean validation accuracy: ", sum(mean_accuracy)/len(mean_accuracy))
     pred_test = model.predict(xtest)
     pred2=model.predict_proba(xtest)[:,1]
-
-
 if __name__ == '__main__':
     randomForest(X, xtest,y)
 

@@ -13,15 +13,11 @@ from sklearn.model_selection import StratifiedKFold
 from sklearn.model_selection import train_test_split
 train = pd.read_csv('train.csv')
 test = pd.read_csv('test.csv')
-
-
-
-
 # drop "Loan_Status" and assign it to target variable
 X = train.drop('Loan_Status', axis=1)
 y = train.Loan_Status
 
-# Provide range for max_depth from 1 to 20 with an interval of 2 and from 1 to 200 with an interval of 20 for n_estimators
+# Provide range for max_depth from 1 to 20 with n interval of 2 and from 1 to 200 with an interval of 20 for n_estimators
 paramgrid = {'max_depth': list(range(1, 20, 2)), 'n_estimators': list(range(1, 200, 20))}
 grid_search = GridSearchCV(XGBClassifier(random_state=1), paramgrid)
 

@@ -41,13 +41,8 @@ def logisticsReg(X,y):
         i+=1
         
     print("\nMean validation accuracy: ", sum(mean_accuracy)/len(mean_accuracy))
-
-
 if __name__ == '__main__':
     logisticsReg(X,y)
-
-
-
 
 
 
