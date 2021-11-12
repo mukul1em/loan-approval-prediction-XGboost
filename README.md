@@ -8,7 +8,7 @@ This is a classification problem where we have to predict whether a loan will be
 
 - handling missing Values 
 
-- Fixing outliers by taking log transformatons
+- Fixing outliers by taking log transformations
 
 - Feature Enginnering
 
