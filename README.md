@@ -14,4 +14,5 @@ This is a classification problem where we have to predict whether a loan will be
 
 - Model evaluation
 
-- Models such as logistic regression, Decision Tree, RandomForest, XGBoost
+- Comparision between Models such as logistic regression, Decision Tree, RandomForest, XGBoost
+
